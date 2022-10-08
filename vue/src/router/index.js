@@ -53,6 +53,9 @@ export const asyncRouterMap = [
         path: '', name: '用户列表', component: _import('user/user'), meta: {title: '用户列表', icon: 'user'}, menu: 'user'
       },
       {
+        path: 'user2', name: '报表', component: _import('user/user2'), meta: {title: '报表', icon: 'user'}, menu: 'user2'
+      },
+      {
         path: 'role',
         name: '权限管理',
         component: _import('user/role'),
