@@ -64,5 +64,28 @@ export const asyncRouterMap = [
       },
     ]
   },
+  {
+    path: '/report',
+    component: Layout,
+    redirect: '/report',
+    name: '报表',
+    meta: {title: '报表', icon: 'tree'},
+    children: [
+      {
+        path: '',
+        name: '报表1',
+        component: _import('user/elementui'),
+        meta: {title: '报表1', icon: 'example'},
+        menu: 'article'
+      },
+      {
+        path: 'r2',
+        name: '报表2',
+        component: _import('user/vcharts'),
+        meta: {title: '报表2', icon: 'example'},
+        menu: 'article'
+      },
+    ]
+  },
   {path: '*', redirect: '/404', hidden: true}
 ]

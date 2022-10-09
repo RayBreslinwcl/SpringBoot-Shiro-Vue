@@ -12,6 +12,18 @@ import {default as api} from './utils/api'
 import directives from "@/directives";
 
 import {hasPermission} from "./utils/hasPermission";
+
+import VCharts from 'v-charts'
+Vue.use(VCharts)
+
+//  原本就已经有了！
+// // import ECharts from 'echarts'
+// import ElementUI from 'element-ui'
+// import 'element-ui/lib/theme-chalk/index.css'
+//
+// Vue.use(ElementUI)
+
+
 Vue.use(ElementUI, {locale})
 Vue.prototype.api = api
 //全局的常量
